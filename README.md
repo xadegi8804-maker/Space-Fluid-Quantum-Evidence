@@ -6,7 +6,7 @@ This repository contains the raw experimental data (JSON) and circuit codes (QAS
 Based on the "Space Generation" model, supermassive black holes (SMBHs) act as sources of vacuum, creating a local flow of space fluid. This project utilizes superconducting qubits as high-precision probes to detect the phase shift induced by this flow relative to Earth's rotation.
 
 ## 🔬 Experimental Platform
-- **Hardware**: `ibm_marrakesh` (126-qubit Eagle r3)
+- **Hardware**: `ibm_marrakesh` (156-qubit Heron r2)
 - **Method**: Ramsey Interferometry using $R_x(\pi/2)$ pulses and ultra-long delay times.
 - **Combined Significance**: **6.6-sigma** deviation from vacuum baseline.
 
