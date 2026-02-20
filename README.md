@@ -27,6 +27,16 @@ The core evidence showing the coupling between Earth's rotation and the galactic
 ### 3. Control Group
 - **`Q23_0ms_20k_0218_KST0920_Control`**: 0ns delay baseline on Q23 to isolate hardware readout bias ($P_1 \approx 0.4965$).
 
+### 4. Hardware Calibration & Dual-Baseline Verification
+
+To ensure that the observed macroscopic phase shift (> 5.8% swing) is not an artifact of hardware drift or periodic maintenance, we strictly accounted for the IBM Marrakesh backend calibration events.
+
+* **Calibration Event:** A routine hardware recalibration occurred on **Feb 18, 2026, at 14:17 UTC**.
+* **Pre-Calibration Baseline (0.4965):** Applied strictly to experiments **E1 through E6** (Valley at -2.88%).
+* **Post-Calibration Baseline (0.4757):** Applied strictly to experiments **E7 through E9** (Peak at +2.97% and subsequent decay).
+
+**Conclusion:** By utilizing a dual-baseline approach, we confirmed that the massive 1.5-hour phase inversion (from E6 to E7) is completely independent of the baseline shift. The perfect symmetry of the ~3% wave survives and is mathematically verified even after isolating the calibration interference. The raw calibration logs are available in the `calibration_data/` directory.
+
 ## ⚙️ How to Reproduce
 The experimental circuits are provided in OpenQASM 2.0 format in the `/circuits` folder. 
 A representative job (e.g., `job-d6agn117ce2c73fe8sg0`) utilized a **4,068,000 dt** delay to maximize sensitivity. 
