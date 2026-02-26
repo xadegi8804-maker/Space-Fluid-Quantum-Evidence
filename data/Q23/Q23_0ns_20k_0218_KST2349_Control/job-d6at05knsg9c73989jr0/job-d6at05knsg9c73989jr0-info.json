@@ -1,0 +1,29 @@
+{
+  "id": "d6at05knsg9c73989jr0",
+  "backend": "ibm_marrakesh",
+  "state": {
+    "status": "Completed"
+  },
+  "params": {
+    "pubs": [
+      [
+        "OPENQASM 3.0;\ninclude \"stdgates.inc\";\nbit[1] c;\nreset $23;\nbarrier $23;\nrx(pi/2) $23;\nbarrier $23;\nbarrier $23;\nrx(pi/2) $23;\nc[0] = measure $23;\n",
+        [],
+        20000
+      ]
+    ],
+    "support_qiskit": false,
+    "version": 2
+  },
+  "program": {
+    "id": "sampler"
+  },
+  "user_id": "IBMid-698001G1ST",
+  "created": "2026-02-18T14:43:34.303964Z",
+  "tags": [
+    "Composer"
+  ],
+  "cost": 600,
+  "status": "Completed",
+  "estimated_running_time_seconds": 5.901287123
+}
